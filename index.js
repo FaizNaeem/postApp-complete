@@ -21,17 +21,22 @@ const get_date = async()=>{
             <h5 class="card-title cart">${doc.data().text} <i class="fa-regular fa-heart"></i></h5>
             <p class="card-text cartd">${doc.data().textarea}</p>
             <h5 class="card-title cart">${doc.data().price} <i class="fa-solid fa-dollar-sign"></i></h5>
-              <a href="./home.html" class="btn btn-primary bn">Add Post</a>
+           
+<button type="button onclick="edit('${doc.id}')"  class="btn bn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Edit</button>
+
+              <a href="#" class="btn btn-danger b">Delete</a>
             </div>
           </div>
             `
-        
+            
             console.log(doc.data().price);
-        })
+          })
+          
         .catch((error) => {
             // Handle any errors
             console.log(error);
         });
     });
 }
+edit()
 get_date()

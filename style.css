@@ -31,10 +31,18 @@
     text-align: center;
 }
 .bn{
-    /* display: flex; */
-    /* align-items: center; */
-    margin-left: 30px;
+    
+    margin-left: 5px;
     background-color:green !important ;
-    width: 200px;
+    width: 100px;
+    /* display:; */
+    visibility: visible;
     border: green !important;
+}
+.b{
+    margin-left: 5px;
+    width: 100px;
+}
+.cm{
+    margin-top: 8%;
 }
